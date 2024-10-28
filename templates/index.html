@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- title -->
+	<title>Crop Recommendation</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body">
+
+	<!-- Navbar -->
+	<div class="container-fluid p-4 mb-0  h5 justify-content-end navbar" id="home">
+		<ul class="nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light" href="#features">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light" href="#services">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light" href="/predict">Predict</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Main Banner -->
+	<section id="banner">
+		<div class="banner-text w-100">
+			<h1>Crop Recommendation System Using AI</h1>
+			<p>Optimize Your Yield with Smart Crop Choices</p>
+			<div class="btn p-4 mt-5 text-light">
+				<a class="btn text-light" href="#form">Predict Now</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- FEATURES -->
+	<div class="container-fluid p-5" id="features">
+		<div class="feature text-center p-4 mb-5 mt-4">
+			<h1 class="p-4 mb-4">Features</h1>
+			<h3>Why Use Our Crop Recommendation System</h3>
+		</div>
+		<div class="card mb-3 border-0">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/static/images/11111.jpg" class="img-fluid rounded-start" alt="farmer">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title"><span><i class="fa-solid fa-seedling"></i></span>Expert Data Insights
+						</h5>
+						<p class="card-text">Utilizing AI and advanced data analytics to provide insights on crop
+							suitability for your region, based on soil, weather, and market trends.</p>
+						<br>
+						<h5 class="card-title mt-5"><span><i class="fa-solid fa-seedling"></i></span>Convenient Online
+							Access</h5>
+						<p class="card-text">Get recommendations at your fingertips with our online crop recommendation
+							tool, accessible anytime, anywhere.</p>
+						<br>
+						<h5 class="card-title mt-5"><span><i class="fa-solid fa-seedling"></i></span>Cost-Effective
+							Solutions</h5>
+						<p class="card-text">Save on costs with optimized crop choices tailored to your specific
+							agricultural needs and environmental factors.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SERVICES -->
+	<div class="container-fluid m-5" id="services">
+		<div class="services text-center p-4 mb-5 mt-4">
+			<h1 class="p-4 mb-4">Services</h1>
+			<h3>Empowering Farmers with AI</h3>
+		</div>
+		<div class="row p-5 col-sm-12 border-0">
+			<div class="card col-md-6 border-0 mt-3">
+				<img src="/static/images/soil.jpg" class="card-img" alt="">
+				<div class="card-img-overlay">
+					<h5 class="card-title">Soil Analysis</h5>
+					<p class="card-text">Get detailed insights into your soil composition to make informed decisions
+						about crop selection.</p>
+				</div>
+			</div>
+			<div class="card col-md-6 border-0 mt-3">
+				<img src="/static/images/satellite-693216_640.jpg" class="card-img" alt="">
+				<div class="card-img-overlay">
+					<h5 class="card-title">Weather Monitoring</h5>
+					<p class="card-text">Our tool factors in real-time weather updates to guide planting schedules for
+						optimal crop yield.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row p-5">
+			<div class="card col-md-6 border-0 mt-3">
+				<img src="/static/images/rotation.jpg" class="card-img" alt="">
+				<div class="card-img-overlay">
+					<h5 class="card-title">Crop Rotation Advice</h5>
+					<p class="card-text">Receive guidance on effective crop rotation to maintain soil health and boost
+						productivity.</p>
+				</div>
+			</div>
+			<div class="card col-md-6 border-0 mt-3">
+				<img src="/static/images/water.jpg" class="card-img" alt="">
+				<div class="card-img-overlay">
+					<h5 class="card-title">Water Management</h5>
+					<p class="card-text">Efficient water usage strategies tailored to your crops and local climate
+						conditions.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- TESTIMONIALS -->
+		<div class="container-fluid m-5 p-4" id="testimonials">
+			<div class="services text-center p-4 mb-5 mt-4">
+				<h1>Testimonials</h1>
+				<h3>What Farmers Say</h3>
+			</div>
+			<div class="card-deck p-4 mb-4">
+				<div class="card p-4 text-center">
+					<div class="d-flex justify-content-center align-items-center mb-2">
+						<!-- Circular Image -->
+						<img src="/static/images/img-1.jpg" width="40px" height="40px" alt="Raj Patel"
+							class="rounded-circle me-2">
+						<!-- Name -->
+						<h5 class="card-title mb-0">Raj Patel</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">"This recommendation system helped me choose the right crop for my soil
+							type, and my yields have improved significantly."</p>
+						<p class="card-text"><a href="#" class="text-muted" style="text-decoration: none;"><i
+									class="fab fa-facebook"></i> @rajpatel</a></p>
+					</div>
+				</div>
+
+				<div class="card p-4 text-center">
+					<div class="d-flex justify-content-center align-items-center mb-2">
+						<!-- Circular Image -->
+						<img src="/static/images/img-2.jpg" width="40px" height="40px" alt="Maria Lopez"
+							class="rounded-circle me-2">
+						<!-- Name -->
+						<h5 class="card-title mb-0">Maria Lopez</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">"The weather monitoring feature is incredibly accurate, helping me make
+							timely planting decisions."</p>
+						<p class="card-text"><a href="#" class="text-muted" style="text-decoration: none;"><i
+									class="fab fa-facebook"></i> /marialopez</a></p>
+					</div>
+				</div>
+
+				<div class="card p-4 text-center">
+					<div class="d-flex justify-content-center align-items-center mb-2">
+						<!-- Circular Image -->
+						<img src="/static/images/img-3.jpg" width="40px" height="40px" alt="Ahmed Khan"
+							class="rounded-circle me-2">
+						<!-- Name -->
+						<h5 class="card-title mb-0">Ahmed Khan</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">"Thanks to the soil analysis, I now have a clear understanding of which
+							crops suit my land best."</p>
+						<p class="card-text"><a href="#" class="text-muted" style="text-decoration: none;"><i
+									class="fab fa-facebook"></i> @ahmedkha</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		
+		<div class="container-fluid p-4 mb-0 text-center">
+			<footer class="text-dark w-100">
+				<div class="py-4">
+					<div class="row justify-content-center">
+						<div class="col-md-4 mb-4">
+							<h5>Contact Us</h5>
+							<p>123 Farm Lane, Agri City</p>
+							<p>Email: support@croprecommend.com</p>
+							<p>Phone: +123 456 7890</p>
+						</div>
+						<div class="col-md-4 mb-4">
+							<h5>Follow Us</h5>
+							<a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="text-dark me-2"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+						</div>
+						<div class="col-md-4 mb-4">
+							<h5>Legal</h5>
+							<a href="#" class="text-dark">Privacy Policy</a><br>
+							<a href="#" class="text-dark">Terms of Service</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div>
+				<p class="text-center mt-4">&copy; 2024 Crop Recommendation System. All Rights Reserved.</p>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"></script>
+		</body>
+
+</html>

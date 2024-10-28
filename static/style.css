@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+	scroll-behavior: smooth;
+	transform: 0.1s;
+}
+
+.navbar{
+	background-color: #009688;
+	font-weight: bolder;
+}
+
+.navbar a:hover{
+	text-decoration: underline;
+	transition: ease-in-out 2ms;
+}
+
+#banner{
+	background:url(/static/images/4.jpg);
+	opacity: 0.9;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 160px;
+}
+
+.banner-text h1 {
+	font-size: 130px;
+}
+
+.banner-text p {
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn {
+	min-width: 400px;
+	background-color: #009688;
+}
+
+.btn :hover{
+	background-color:rgb(220, 11, 15);
+	color: #f2f5f5;
+}
+
+span{
+	padding: 18px;
+	color: #009688;
+}
+
+.card-body h5{
+	color: rgb(182, 13, 13);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.card-body p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #009688;
+}
+
+.card {
+	position: relative;
+	overflow: hidden;
+	border: 0;
+  }
+  
+.card-img {
+	transition: transform 0.3s ease;
+  }
+  
+.card .card-img-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), #009688);
+	color: #fff;
+	padding: 20px;
+	transition: transform 0.3s ease;
+	transform: translateY(100%);
+  }
+  
+.card:hover .card-img-overlay {
+	transform: translateY(0);
+  }
+  
+.card:hover .card-img {
+	transform: scale(1.1);
+  }  
+
+  a {
+	text-decoration: none;
+  }
+
+  .footer {
+	background-color: #009688;
+  }
