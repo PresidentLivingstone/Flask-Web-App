@@ -3,5 +3,6 @@ pandas
 numpy 
 seaborn
 Flask 
-matplotlib 
+matplotlib
+requests
 
